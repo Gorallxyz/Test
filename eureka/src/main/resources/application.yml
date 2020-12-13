@@ -1,0 +1,16 @@
+server:
+  port: 8761
+eureka:
+  client:
+    registerWithEureka: false # 单点的时候设置为 false 禁止注册自身
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  server:
+    enableSelfPreservation: false
+    evictionIntervalTimerInMs: 4000
+#spring:
+#  security:
+#    user:
+#      name: zhongyuxing
+#      password: zhongyuxing
